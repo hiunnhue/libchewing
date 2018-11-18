@@ -34,7 +34,7 @@ matrix:
 before_install:
   - pip install --user cpp-coveralls
   - P_JOBS="-j$(getconf _NPROCESSORS_ONLN)"
-  - yes | sudo add-apt-repository ppa:kalakris/cmake
+#  - yes | sudo add-apt-repository ppa:kalakris/cmake
   - sudo apt-get update -qq
 
 install: sudo apt-get install cmake
